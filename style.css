@@ -1,0 +1,3140 @@
+/********** GERAL **************/
+
+* {
+  box-sizing: border-box
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif
+}
+
+.container {
+  width: min(1180px, calc(100% - 64px));
+  margin: auto
+}
+
+
+
+
+
+/*************************** BRAND *************************/
+
+.brand {
+  display: inline-flex;
+  flex-direction: column;
+
+}
+
+.brand>.brand-title {
+  
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 25px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: -.4px;
+  line-height: 1;
+}
+
+.brand>.brand-kicker {
+ font-family: "Inter", sans-serif;
+font-size: 10px;
+color:#a3bc74;
+font-weight: 300;
+letter-spacing:02px;
+}
+
+
+
+
+
+
+
+/******************** NAV ***************************/
+
+
+
+
+.nav {
+  height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, .35)
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px
+}
+
+.nav-links a,
+.nav-cta {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px
+}
+
+.nav-links a:hover{
+  color:#9caf7b;
+}
+
+
+
+.nav-cta {
+  border: 1px solid rgba(255, 255, 255, .7);
+  padding: 11px 16px
+}
+
+.nav-cta span {
+  margin-left: 9px
+}
+
+.menu-toggle {
+  display: none
+}
+
+
+
+.light {
+  color: #f0d4a4
+}
+
+
+.round-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 22px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px
+}
+
+.round-link b {
+  height: 42px;
+  width: 42px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 17px
+}
+
+
+.intro {
+  padding: 150px 0 135px
+}
+
+.intro-kicker {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start
+}
+
+.number {
+  font: 600 13px 'DM Mono', monospace;
+  color: var(--rust)
+}
+
+.intro-text {
+  display: grid;
+  grid-template-columns: 1.25fr .75fr;
+  gap: 85px;
+  margin-top: 38px;
+  padding-left: 92px
+}
+
+.intro h2 {
+  font-size: clamp(50px, 6vw, 83px)
+}
+
+.intro-text>div {
+  padding-top: 20px
+}
+
+.intro-text p,
+.side-copy {
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0 0 25px
+}
+
+.text-link {
+  color: var(--ink);
+  font-size: 13px;
+  text-underline-offset: 6px
+}
+
+.text-link span {
+  margin-left: 8px;
+  color: var(--rust)
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr .7fr;
+  min-height: 570px
+}
+
+.feature {
+  padding: 55px
+}
+
+.image-feature {
+  background: linear-gradient(#18312622, #18312655), url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1000&q=80') center/cover;
+  position: relative;
+  color: #fff
+}
+
+.image-overlay {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start
+}
+
+.image-feature h3 {
+  font: 700 48px/.95 'Playfair Display', serif;
+  margin: 0
+}
+
+.image-feature a {
+  margin-top: auto;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center
+}
+
+
+.text-feature h3,
+.card-caption h3 {
+  font: 700 39px/1.05 'Playfair Display', serif;
+  margin: 0 0 28px;
+  letter-spacing: -1.5px
+}
+
+.text-feature>p:not(.eyebrow) {
+  font-size: 15px;
+  line-height: 1.65;
+  max-width: 300px
+}
+
+.pill-link {
+  display: inline-block;
+  color: var(--ink);
+  font-size: 12px;
+  text-decoration: none;
+  border-bottom: 1px solid var(--ink);
+  padding: 16px 0;
+  margin-top: 19px
+}
+
+.pill-link span {
+  margin-left: 22px
+}
+
+
+.culture {
+  padding: 140px 0
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 60px
+}
+
+.section-heading h2 {
+  font-size: clamp(46px, 5.6vw, 75px)
+}
+
+.side-copy {
+  max-width: 280px;
+  margin: 0 30px 8px
+}
+
+.culture-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px
+}
+
+.card-photo {
+  height: 340px;
+  background-position: center;
+  background-size: cover
+}
+
+.pauliteiros {
+  background-image: url('https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=700&q=80')
+}
+
+.caretos {
+  background-image: url('https://images.unsplash.com/photo-1474552226712-ac0f0961a954?auto=format&fit=crop&w=700&q=80')
+}
+
+.crafts {
+  background-image: url('https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=700&q=80')
+}
+
+.card-caption {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+  margin-top: 18px;
+  position: relative
+}
+
+.card-caption span {
+  font: 10px 'DM Mono', monospace;
+  color: var(--rust)
+}
+
+.card-caption h3 {
+  font-size: 23px;
+  margin: 10px 0 7px
+}
+
+.card-caption p {
+  margin:10px 0;
+  color: #59615c;
+  font-size: 13px;
+  padding-right: 20px;
+}
+
+.flavour {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #263d34;
+  color: white
+}
+
+.flavour-image {
+  min-height: 650px;
+  background: url('https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1100&q=85') center/cover
+}
+
+.flavour-content {
+  padding: 92px max(40px, calc((100vw - 1180px)/2)) 80px 80px
+}
+
+.flavour h2 {
+  font-size: clamp(48px, 5.2vw, 73px)
+}
+
+.flavour-content>p:not(.eyebrow) {
+  line-height: 1.65;
+  max-width: 380px;
+  margin: 30px 0
+}
+
+.flavour-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #ffffff52;
+  margin-top: 35px
+}
+
+.flavour-list span {
+  padding: 14px 0;
+  border-bottom: 1px solid #ffffff52;
+  font: 12px 'DM Mono', monospace
+}
+
+.inverse {
+  color: white;
+  border-color: white
+}
+
+.experiences {
+  padding: 140px 0
+}
+
+.experience-list {
+  border-top: 1px solid var(--ink);
+  padding-left: 6px;
+}
+
+.experience-list article {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr 35px;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid var(--line);
+  padding: 29px 0
+}
+
+.exp-no {
+  font: 12px 'DM Mono', monospace;
+  color: var(--rust);
+  padding-left: 18px;
+}
+
+
+.experience-list .eyebrow {
+  margin: 0 0 8px
+}
+
+.experience-list h3 {
+  font: 700 31px 'Playfair Display', serif;
+  margin: 0;
+  letter-spacing: -.8px
+}
+
+.exp-desc {
+  font-size: 13px;
+  line-height: 1.55;
+  max-width: 300px;
+  color: #4c5750
+}
+
+.arrow {
+  font-size: 23px
+}
+
+.plan {
+  background: #d9b96c url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80') center/cover;
+  background-blend-mode: multiply;
+  color: #fff
+}
+
+.plan-content {
+  padding: 125px 0
+}
+
+.plan h2 {
+  font-size: clamp(60px, 7vw, 92px)
+}
+
+.plan-content>p:not(.eyebrow) {
+  font-size: 16px;
+  margin: 28px 0
+}
+
+.plan-buttons {
+  display: flex;
+  gap: 12px
+}
+
+.button {
+  display: inline-flex;
+  gap: 30px;
+  padding: 15px 18px;
+  background: #fff;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 13px
+}
+
+.button.outline {
+  background: transparent;
+  color: white;
+  border: 1px solid white
+}
+
+footer {
+  background: #1c2923;
+  color: #fff;
+  padding: 60px 0 25px
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 55px
+}
+
+.footer-top>p {
+  font: 600 26px 'Playfair Display', serif;
+  margin: 0
+}
+
+.back-top {
+  color: #fff;
+  font-size: 12px
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 1px solid #ffffff44;
+  font: 10px 'DM Mono', monospace;
+  letter-spacing: .4px;
+  color: #ccd0cb
+}
+
+.mirandese {
+  color: #f0d4a4
+}
+
+
+
+/* Source: culture.css */
+
+.language {
+  background-image: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=700&q=80')
+}
+
+.capes {
+  background-image: url('https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=700&q=80')
+}
+
+.legends {
+  margin-top: 100px;
+  border-top: 1px solid var(--ink);
+  display: grid;
+  grid-template-columns: 1fr 1fr
+}
+
+.legends-heading {
+  padding: 36px 55px 35px 0;
+  grid-row: span 2
+}
+
+.legends-heading .eyebrow {
+  margin-bottom: 12px
+}
+
+.legends h3 {
+  font: 700 37px/1 'Playfair Display', serif;
+  margin: 0;
+  letter-spacing: -1px
+}
+
+.legends article {
+  display: grid;
+  grid-template-columns: 35px 1fr 25px;
+  gap: 14px;
+  align-items: start;
+  border-bottom: 1px solid var(--line);
+  padding: 26px 0
+}
+
+.legends article span {
+  font: 11px 'DM Mono', monospace;
+  color: var(--rust)
+}
+
+.legends h4 {
+  font: 700 23px 'Playfair Display', serif;
+  margin: 0 0 8px
+}
+
+.legends article p {
+  font-size: 13px;
+  line-height: 1.55;
+  margin: 0;
+  color: #59615c
+}
+
+.legends a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 19px
+}
+
+
+
+
+/* Source: gastronomia.css */
+
+.flavour-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #ffffff52;
+  margin-top: 35px
+}
+
+.flavour-list article {
+  padding: 14px 14px 14px 0;
+  border-bottom: 1px solid #ffffff52
+}
+
+.flavour-list article:nth-child(odd) {
+  padding-right: 20px
+}
+
+.flavour-list h3 {
+  font: 500 12px 'DM Mono', monospace;
+  margin: 0 0 7px;
+  color: #f0d4a4
+}
+
+.flavour-list p {
+  font-size: 12px;
+  line-height: 1.42;
+  margin: 0;
+  color: #f7f5ee
+}
+
+
+
+
+/* Source: gastronomia-visual.css */
+
+.flavour-list article {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  column-gap: 12px;
+  align-items: start
+}
+
+.flavour-list .dish-photo {
+  grid-row: span 2;
+  width: 64px;
+  height: 64px;
+  background: center/cover
+}
+
+.alheira-dish {
+  background-image: url('assets/alheira.jpg')
+}
+
+.posta-dish {
+  background-image: url('assets/posta-mirandesa.jpg')
+}
+
+.cordeiro-dish {
+  background-image: url('assets/cordeiro.jpg')
+}
+
+.butelo-dish {
+  background-image: url('assets/alheira.jpg')
+}
+
+.bola-dish {
+  background-image: url('assets/bola-doce.jpg')
+}
+
+.roscos-dish {
+  background-image: url('assets/roscos.jpg')
+}
+
+.sodos-dish {
+  background-image: url('assets/sodos.jpg')
+}
+
+.flavour-list h3,
+.flavour-list p {
+  grid-column: 2
+}
+
+.breeds {
+  padding: 140px 0;
+    padding: 80px 0;
+    background: #f0eadd;
+
+}
+
+.breed-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px
+}
+
+.breed-card {
+  height: 410px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff
+}
+
+.breed-card:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+  180deg, rgba(15, 28, 23, .85), rgba(15, 28, 23, .05) 80%)
+}
+
+.breed-card>div {
+  position: absolute;
+  inset: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end
+}
+
+.breed-card span {
+  position: absolute;
+  top: 25px;
+  font: 11px 'DM Mono', monospace;
+  color: #f0d4a4
+}
+
+.breed-card h3 {
+  font: 700 32px/1 'Playfair Display', serif;
+  margin: 0 0 12px;
+  letter-spacing: -1px
+}
+
+.breed-card p {
+  font-size: 13px;
+  line-height: 1.5;
+  max-width: 290px;
+  margin:10px 0;
+  position: relative;
+}
+
+.breed-card > * {
+  transition: opacity .5s ease;
+}
+
+.breed-card > *:hover {
+  opacity: 0;
+}
+
+
+.breed-card:hover::before {
+   background: linear-gradient(
+  180deg, rgba(15, 28, 23, .0), rgba(15, 28, 23, .0) 100%)
+}
+
+
+.breed-card:hover::after {
+   background:
+linear-gradient(180deg, rgba(20, 28, 20, .05) 15%, rgba(20, 28, 20, .05) 100%);
+}
+
+.burro-breed {
+  background-image: url('assets/burro-mirandes.jpg')
+}
+
+.churra-breed {
+  background-image: url('assets/churra1.jpg')
+}
+
+.vaca-breed {
+  background-image:  url('assets/vaca1.jpg')
+}
+
+
+
+
+
+/* Source: imagens-locais.css */
+
+/* Fotografias locais cedidas para o projeto. */
+
+
+.image-feature {
+  background-image: linear-gradient(#18312622, #18312655), url('assets/castelo3.jpg')
+}
+
+.pauliteiros {
+  background-image: url('assets/pauliteiros1.jpg')
+}
+
+.capes {
+  background-image: url('assets/capahonras1.jpg')
+}
+
+.flavour-image {
+  background-image: url('assets/posta-mirandesa.jpg')
+}
+
+.plan {
+  background-image: linear-gradient(rgba(83, 66, 30, .32), rgba(83, 66, 30, .32)), url('assets/miradouro1.jpg');
+  background-blend-mode: multiply
+}
+
+.experience-list article:first-child {
+  padding-left: 18px;
+  padding-right: 18px
+}
+
+
+/************* RESTAURANTS ******************/
+
+.restaurants {
+  padding: 140px 0;
+  background: #e2d8c7
+}
+
+
+.restaurant-label {
+  font: 500 10px 'DM Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  color: var(--rust);
+  border-top: 1px solid var(--ink);
+  padding: 18px 0;
+  margin: 0 0 25px
+}
+
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 28px
+}
+
+.restaurant-card {
+  height: 330px;
+  color: #fff;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  min-width: 0
+}
+
+.restaurant-card:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(14, 23, 20, .8), transparent 65%)
+}
+
+.restaurant-card>div {
+  position: absolute;
+  inset: 0;
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end
+}
+
+.restaurant-card p {
+  font: 11px 'DM Mono', monospace;
+  margin:10px 0 auto;
+}
+
+.restaurant-card h3 {
+  font: 700 30px/1 'Playfair Display', serif;
+  margin: 0 0 12px;
+  letter-spacing: -1px
+}
+
+.restaurant-card span {
+  font-size: 11px
+}
+
+.mirandes-card {
+  background-image: url('assets/restaurante-mirandes.jpg')
+}
+
+.jordao-card {
+  background-image: url('assets/jordao.jpg')
+}
+
+.tome-card {
+  background-image: url('assets/mercearia-tome.webp')
+}
+
+.gorgonzola-card {
+  background-image: url('assets/gorgonzola.jpg')
+}
+
+.bombeiros-card {
+  background-image: url('assets/bombeiros-tapas.webp')
+}
+
+.miradouro-card {
+  background-image: url('assets/restaurante-miradouro.jpg')
+}
+
+.sao-pedro-card {
+  background-image: url('assets/sao-pedro.jpg')
+}
+
+.balbina-card {
+  background-image: url('assets/casa-da-balbina.jpg')
+}
+
+.capa-card {
+  background-image: url('assets/capa-dhonras.jpg')
+}
+
+.buteko-card {
+  background-image: url('assets/buteko.jpg')
+}
+
+.like-card {
+  background-image: url('assets/like-bar.jpg')
+}
+
+.restaurant-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+   gap: 18px;
+  margin: 20px 0 70px
+}
+
+.restaurant-list article {
+  border-top: 1px solid var(--line);
+  padding: 16px 0
+}
+
+.restaurant-list span {
+  font: 10px 'DM Mono', monospace;
+  color: var(--rust)
+}
+
+.restaurant-list h3 {
+  font: 700 21px 'Playfair Display', serif;
+  margin: 10px 0 5px
+}
+
+.restaurant-list p {
+  font-size: 12px;
+  margin: 0;
+  color: #59615c
+}
+
+.restaurant-actions,
+.activity-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px
+}
+
+.restaurant-actions a,
+.activity-actions a {
+  color: inherit;
+  text-decoration: none;
+  font: 10px 'DM Mono', monospace;
+  letter-spacing: .2px;
+  border: 1px solid currentColor;
+  padding: 8px 9px;
+  background: #f5f0e5cc
+}
+
+.restaurant-card .restaurant-actions a {
+  color: #fff;
+  background: #18251bcc;
+  border-color: #ffffff88
+}
+
+
+
+
+
+
+
+/*****   STAYS   ******/
+.stays {
+  padding: 120px 0;
+  background: #244334;
+  color: #fff;
+}
+
+
+.stays h2 {
+  font-size: clamp(46px, 5.5vw, 76px)
+}
+
+
+.stay-card-copy {
+  padding: 35px
+}
+
+.stay-card-copy h3 {
+  font: 700 42px 'Playfair Display', serif;
+  margin: 0 0 16px
+}
+
+.stay-card-copy>p:not(.eyebrow) {
+  line-height: 1.65;
+  min-height: 130px
+}
+
+
+
+.stay-photo {
+  width: 100%;
+  height: 265px;
+  object-fit: cover;
+  display: block
+}
+
+.stay-card-copy .button {
+  margin-top: 15px
+}
+
+
+
+.stay-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 28px 0 0;
+  box-sizing: border-box;
+   padding: 0;
+  border: 0;
+  width: 100%;
+  gap: 12px;}
+
+  
+.stay-grid article {
+  background:#1c2923
+}
+
+
+.stay-grid a {
+   display: inline-flex;
+  align-items: center;
+  gap: 7px;
+   font-size: 14px;
+  padding: 14px 16px;
+  background: #173d28;
+  color: #f7f2e8;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+}
+
+
+.stay-grid .stay-actions {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: fit-content(132px) fit-content(132px);
+  justify-content: start;
+   flex-wrap: nowrap;
+   margin-top: 20px;
+}
+
+
+
+
+.stay-grid .stay-actions .button {
+  color: #132a20;
+   background: #6e7d52;
+    margin: 0;
+  justify-content: center;
+  white-space: nowrap;
+  width: auto;
+  padding: 11px 16px;
+  font-size: 11px
+}
+
+
+.stay-actions .button.outline {
+  color: #6e7d52;
+   background: transparent;
+  border-color: #6e7d52;
+}
+
+
+.stay-contact {
+  display: grid;
+  grid-template-columns: 1fr;
+ align-items:center;
+ margin: 28px 0 0;
+ gap:12px;
+}
+
+
+.stay-contact a {
+   min-height: 64px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+ color:#0a271a;
+  font: 400 13px/1.3 'DM Mono', monospace;
+  overflow-wrap: anywhere;
+  gap: 10px;
+  background-color:  #6e7d52;
+  
+}
+
+
+/********* BOOKING REQUEST **********/
+
+.booking-request>div>p:not(.eyebrow):not(.stay-contact) {
+  line-height: 1.65
+}
+
+
+
+
+
+
+
+/*****************************************************/
+
+
+
+
+.experience-list article {
+  transition: 0.2s;
+}
+
+.experience-list article:hover {
+  background: #fdf8f1;
+}
+
+
+
+
+
+
+
+
+/* GASTRONOMIA */
+.flavour-list .dish-photo {
+  display: block !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important
+}
+
+
+
+
+/* HISTÓRIA */
+
+.history {
+  padding: 120px 0;
+  background: #dde4d4
+
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 80px
+}
+
+.history h2 {
+  font-size: clamp(48px, 6vw, 78px)
+}
+
+.history-grid p {
+  font-size: 16px;
+  line-height: 1.75;
+  margin: 0 0 18px
+}
+
+.language-guide {
+  margin-top: 85px;
+  padding: 45px;
+  background: #d7d0bf;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 45px
+}
+
+.language-guide h3 {
+  font: 700 36px/1 'Playfair Display', serif;
+  margin: 0 0 18px
+}
+
+.language-guide>div>p:not(.eyebrow) {
+  font-size: 14px;
+  line-height: 1.65
+}
+
+.expressions p {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid #9c9688;
+  padding: 9px 0;
+  margin: 0;
+  font-size: 13px
+}
+
+.expressions b {
+  font-family: 'Playfair Display', serif
+}
+
+.alphabet {
+  grid-column: 1/-1;
+  border-top: 1px solid #9c9688;
+  padding-top: 17px
+}
+
+.alphabet p:not(.eyebrow) {
+  font: 13px/2 'DM Mono', monospace
+}
+
+.map-section {
+  padding: 110px 0;
+color: #fff;
+}
+
+.map-section h2 {
+  font-size: clamp(45px, 6vw, 75px)
+}
+
+.map-section .eyebrow {
+ color:#6e7d52;
+}
+
+.map-section a {
+ color: #fff;
+}
+
+.map-section>div>p:not(.eyebrow) {
+  max-width: 620px;
+  line-height: 1.65
+}
+
+.map-section iframe {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: 430px;
+  margin: 35px 0 18px;
+  filter: saturate(.7) sepia(.12)
+}
+
+.restaurant-actions span,
+.activity-actions span {
+  font: 10px 'DM Mono', monospace;
+  padding: 8px 0
+}
+
+
+.restaurant-actions a:nth-child(2):before,
+.activity-actions a:nth-child(2):before {
+  content: 'â˜Ž ';
+  font-size: 12px
+}
+
+
+
+.butelo-dish,
+.language {
+  background-image: none !important;
+  background-color: #82906a !important;
+  display: grid !important;
+  place-items: center
+}
+
+.butelo-dish:after,
+.language:after {
+  content: 'SUBSTITUIR';
+  font: 600 10px 'DM Mono', monospace;
+  letter-spacing: 1px;
+  color: #f3efdf
+}
+
+.language {
+  position: relative
+}
+
+.language:after {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center
+}
+
+.flavour-list img.dish-photo {
+  width: 64px !important;
+  height: 64px !important;
+  object-fit: cover !important;
+  background: none !important;
+  flex: none
+}
+
+.viewpoints {
+  padding: 125px 0
+}
+
+.viewpoint-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px
+}
+
+.viewpoint-grid article {
+  background: #fdf7ed;
+}
+
+.viewpoint-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block
+}
+
+.viewpoint-grid div {
+  padding: 20px
+}
+
+.viewpoint-grid h3 {
+  font: 700 25px/1.05 'Playfair Display', serif;
+  margin: 0 0 14px
+}
+
+.viewpoint-grid p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0 0 8px
+}
+
+.viewpoint-grid a {
+  display: inline-block;
+  color: var(--ink);
+  font: 11px 'DM Mono', monospace;
+  margin-top: 9px
+}
+
+
+
+.activity-meta {
+  font-size: 11px !important;
+  line-height: 1.5 !important;
+  margin: 10px 0 0 !important;
+  color: #3d4d3c !important
+}
+
+
+.restaurant-actions a:nth-child(2):before,
+.activity-actions a:nth-child(2):before {
+  content: 'ðŸ“± ';
+  font-size: 12px
+}
+
+
+.alphabet-intro {
+  max-width: 650px;
+  margin: 0 0 20px !important;
+  font: 13px/1.5 'DM Mono', monospace !important
+}
+
+.alphabet-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 8px
+}
+
+.alphabet-grid span {
+  min-height: 92px;
+  padding: 10px;
+  background: #c8c1b0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px
+}
+
+.alphabet-grid b {
+  font: 700 22px 'Playfair Display', serif;
+  color: #38503c
+}
+
+.alphabet-grid i {
+  font: 700 12px/1.2 'DM Mono', monospace;
+  font-style: normal
+}
+
+.alphabet-grid em {
+  font: 11px/1.2 Arial, sans-serif;
+  color: #59554c;
+  font-style: normal
+}
+
+.restaurant-card>div,
+.breed-card>div {
+  position: relative;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, .85)
+}
+
+.restaurant-card:after,
+.breed-card:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(20, 28, 20, .05) 15%, rgba(20, 28, 20, .78) 100%);
+  pointer-events: none
+}
+
+.restaurant-card>div,
+.breed-card>div {
+  z-index: 1
+}
+
+.feature-card .card-caption,
+.hero-content {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, .65)
+}
+
+
+
+.legends article img {
+  width: 108px;
+  height: 108px;
+  object-fit: cover;
+  display: block;
+  flex: none
+}
+
+.historic-list {
+  grid-column: 2;
+  margin: 12px 0 0;
+  padding-left: 18px;
+  font-size: 13px;
+  color: #4c5750;
+  line-height: 1.8;
+list-style-type:circle;
+}
+
+
+
+
+
+.restaurant-actions a:nth-child(2):before,
+.activity-actions a:nth-child(2):before {
+  content: 'â˜Ž ';
+  font-family: Arial, sans-serif;
+  font-size: 13px
+}
+
+.activity-actions a:last-child[href^="tel"]:before {
+  content: 'â˜Ž ';
+  font-family: Arial, sans-serif;
+  font-size: 13px
+}
+
+
+
+.legends article {
+  grid-template-columns: 35px 108px minmax(0, 1fr) 25px
+}
+
+.legends article img+div {
+  grid-column: 3
+}
+
+.legends article img~a {
+  grid-column: 4
+}
+
+
+
+.language {
+  background-image: url('assets/lingua-mirandesa.jpg') !important;
+  display: block !important;
+  background-position: center !important
+}
+
+.language:after {
+  display: none !important
+}
+
+.language-quote {
+  margin: 28px 0 0 auto;
+  max-width: 520px;
+  padding: 22px 26px;
+  background: #38503c;
+  color: #f5f0e4;
+  font: 600 21px/1.35 'Playfair Display', serif
+}
+
+.language-quote small {
+  display: block;
+  margin-top: 10px;
+  font: 11px/1.4 'DM Mono', monospace;
+  color: #d9d2bf
+}
+
+
+
+
+.viewpoint-grid article:nth-child(1) img,
+.viewpoint-grid article:nth-child(2) img {
+  object-position: center bottom
+}
+
+.daytrips {
+  padding: 125px 0;
+  background: #e4ddcf
+}
+
+.daytrip-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px
+}
+
+.daytrip-grid article {
+  background: #f4efe5
+}
+
+.daytrip-grid img {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover
+}
+
+.daytrip-grid div {
+  padding: 20px
+}
+
+.daytrip-grid h3 {
+  font: 700 28px/1 'Playfair Display', serif;
+  margin: 0 0 12px
+}
+
+.daytrip-grid p {
+  font-size: 13px;
+  line-height: 1.55;
+  margin: 0 0 8px;
+  color: #485249
+}
+
+.daytrip-grid a {
+  display: inline-block;
+  margin-top: 9px;
+  color: var(--ink);
+  font: 11px 'DM Mono', monospace
+}
+
+
+
+/* Ajustes finais de navegaÃ§Ã£o, Ã­cones e cadÃªncia rÃºstica das secÃ§Ãµes. */
+
+
+
+.phone-link {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px
+}
+
+.phone-icon {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: none
+}
+
+.restaurant-actions a:nth-child(2):before,
+.activity-actions a:nth-child(2):before,
+.activity-actions a:last-child[href^="tel"]:before {
+  content: none !important
+}
+
+.legends article {
+  grid-template-columns: 35px 108px minmax(0, 1fr) !important
+}
+
+.legends article img+div {
+  grid-column: 3 !important
+}
+
+.legends article p {
+  margin: 0 0 10px;
+  line-height: 1.55
+}
+
+
+
+.culture {
+  background:  #f0eadd;
+  
+}
+
+.experiences {
+  background:
+  #fdf7ed;
+}
+
+.viewpoints {
+
+  background: #f0eadd;
+}
+
+.map-section {
+  background:#132a20;
+
+}
+
+.daytrips {
+  background: #e5ddcf
+}
+
+
+
+
+/* SECÇÕES GERAL */
+.casual-label {
+  margin-top: 0
+}
+
+
+:root {
+  --rust: #5a6c46;
+  --moss: #536544;
+  --ink: #263126;
+  --cream: #f2eee4;
+  --sand: #e3dbcc;
+  --line: #b8ae9b
+}
+
+
+  .eyebrow {
+  font: 500 10px 'DM Mono', monospace;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  color: #6e7d52
+}
+
+.text-feature {
+   background: #d8d0bd
+}
+
+.quote-feature {
+  background: #596b48;
+  color: #fff;
+  display: flex;
+  flex-direction: column
+}
+
+
+.quote-mark {
+  font: 70px 'Playfair Display';
+  line-height: .65
+}
+
+.quote-feature blockquote {
+  font: 600 26px/1.2 'Playfair Display', serif;
+  margin: 50px 0 25px
+}
+
+.quote-feature p {
+  font: 11px/1.5 'DM Mono', monospace;
+  opacity: .9
+}
+
+
+.hero {
+  min-height: 760px;
+  color: #fff;
+  position: relative;
+  background: linear-gradient(90deg, rgba(19, 33, 28, .72), rgba(19, 33, 28, .18)), url('ttps://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2000&q=85') center/cover
+}
+
+.hero-content {
+  padding-top: 135px
+}
+
+
+
+.hero h1,
+h2 {
+  font: 700 clamp(48px, 7vw, 100px)/.96 'Playfair Display', serif;
+  letter-spacing: -4px;
+  margin: 0
+}
+
+.hero h1 em,
+h2 em {
+  font-weight: 600
+}
+
+.hero-copy {
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 400px;
+  margin: 30px 0 35px;
+  color: #faf7f1
+}
+
+.hero-bottom {
+  position: absolute;
+  bottom: 28px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  font: 10px 'DM Mono', monospace;
+  letter-spacing: 1px
+}
+
+.hero {
+  background-image: linear-gradient(90deg, rgba(19, 33, 28, .72), rgba(19, 33, 28, .18)), url('assets/rio1.jpg');
+  filter: none
+}
+
+.hero-region {
+  color: #dce7cf !important;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, .72) !important
+}
+
+.hero-content .round-link {
+  display: flex !important;
+  width: fit-content !important;
+  margin-top: 46px !important;
+}
+
+
+.feature-grid,
+.culture-cards,
+.restaurant-grid,
+.breed-grid {
+  gap: 18px
+}
+
+.card-photo,
+.restaurant-card,
+.breed-card,
+.flavour-image {
+  filter: saturate(.78) sepia(.08)
+}
+
+
+
+.history,
+.culture,
+.breeds,
+.experiences,
+.viewpoints {
+  position: relative;
+  z-index: 0
+}
+
+.history:before,
+.culture:before,
+.breeds:before,
+.experiences:before,
+.viewpoints:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: calc((100vw - 100%)/-2);
+  right: calc((100vw - 100%)/-2);
+  background: inherit
+}
+
+
+.button {
+  align-items: center;
+  justify-content: center;
+  line-height: 1.15
+}
+
+.breed-card p {
+  line-height: 1.55;
+  max-width: 340px
+}
+
+.viewpoint-grid article:nth-child(4) img,
+.viewpoint-grid article:nth-child(5) img {
+  object-position: center bottom
+}
+
+.historic-list li {
+  margin: 0 0 5px
+}
+
+.daytrip-actions {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  flex-wrap: wrap
+}
+
+.daytrip-actions a {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.15
+}
+
+.daytrip-actions .discover-link {
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px
+}
+
+
+
+  .breed-card p {
+    font-size: 13px
+  }
+
+  .history:before,
+  .culture:before,
+  .breeds:before,
+  .experiences:before,
+  .viewpoints:before {
+    left: -19px;
+    right: -19px
+  }
+
+
+/* EVENTOS */
+.annual-events {
+  padding: 120px 0;
+  background:  #fdf7ed;
+  position: relative;
+  box-shadow: 0 0 0 100vmax #d6ddce;
+  clip-path: inset(0 -100vmax)
+}
+
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px
+}
+
+.events-grid article {
+  background: #f7f2e8;
+  padding: 25px;
+  min-height: 230px;
+  border-top: 4px solid #64765f
+}
+
+.events-grid h3 {
+  margin: 8px 0 12px;
+  font: 700 27px/1.05 'Playfair Display', serif;
+  color: var(--ink)
+}
+
+.events-grid p {
+  margin: 0 0 12px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #38473c
+}
+
+.events-grid .event-date {
+  font: 700 10px/1.3 'DM Mono', monospace;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #4c654c
+}
+
+.event-meta {
+  font-size: 12px;
+  color: #223b2b;
+}
+
+.events-grid .event-feature {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 42% 1fr;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  background: #304937
+}
+
+.event-feature img {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover
+}
+
+.event-feature div {
+  padding: 30px
+}
+
+.event-feature h3,
+.event-feature p {
+  color: #f8f3e9
+}
+
+.event-feature .eyebrow {
+  color: #c8d4bd
+}
+
+.event-feature .event-meta {
+  color: #e3ead9 
+}
+
+
+
+
+/* HÁ FESTA NA ALDEIA */
+
+.village-festivals summary {
+  cursor: pointer;
+  font: 700 18px/1.3 'Playfair Display', serif;
+  color: var(--ink)
+}
+
+
+.events-grid>.village-festivals {
+  display: block;
+  grid-column: span 2;
+  margin-top: 0 ;
+  padding: 25px;
+  background: #f7f2e8;
+}
+
+.village-festivals>div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px 26px;
+}
+
+.events-grid>.village-festivals h3 {
+   font: 700 24px/1.2 'Playfair Display', serif;
+  color: var(--ink);
+   margin: 0 0 16px;
+}
+
+.events-grid>.village-festivals p {
+  font-size: 13px;
+  line-height: 1.55;
+  margin: 5px 0;
+  padding: 8px 10px;
+  border-left: 2px solid #91a48a;
+}
+
+.village-festivals p b {
+  display: block;
+  margin-bottom: 3px;
+  color: #4c654c;
+  font: 700 10px/1.3 'DM Mono', monospace;
+  letter-spacing: .8px;
+  text-transform: uppercase
+}
+
+
+
+/* PEDIDO RESERVA */
+
+.booking-request {
+  margin-top: 42px;
+  padding: 40px;
+  background: #d7dfce;
+  color: #183126;
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 48px
+}
+
+.booking-request h3 {
+  font: 700 40px/1.05 'Playfair Display', serif;
+  margin: 0 0 14px
+}
+
+
+.booking-request form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px
+}
+
+.form-field.full,
+.guest-counts,
+.form-submit,
+.form-status {
+  grid-column: 1/-1
+}
+
+.form-field label {
+  font: 700 11px/1.3 'DM Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: .5px
+}
+
+.form-field input,
+.form-field textarea, .form-field select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #8b9d84;
+  background: #fbf8ee;
+  color: #172c20;
+  padding: 12px 13px;
+  font: 14px/1.3 Arial, sans-serif;
+  border-radius: 0
+}
+
+.form-field textarea {
+  resize: vertical
+}
+
+.guest-counts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px
+}
+
+.form-submit {
+  justify-self: start;
+  border: 0;
+  cursor: pointer;
+  background: #284736;
+  color: #fff;
+  margin-top: 2px
+}
+
+.form-submit:disabled {
+  opacity: .65;
+  cursor: wait
+}
+
+.form-status {
+  min-height: 21px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.45
+}
+
+.form-status.success {
+  color: #173d28
+}
+
+.form-status.error {
+  color: #7a271d
+}
+
+
+
+/* Afinamentos responsivos, enquadramentos e apresentaÃ§Ã£o dos contactos. */
+body {
+  overflow-x: hidden
+}
+
+
+.email-icon {
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: none
+}
+
+.form-submit {
+  background: #123a28 !important;
+  color: #f9f5e9 !important
+}
+
+.daytrip-actions {
+  justify-content: flex-start !important;
+  align-items: flex-start !important
+}
+
+.daytrip-actions a {
+  margin-top: 9px !important
+}
+
+.viewpoint-grid article:nth-child(2) img {
+  object-position: center top !important
+}
+
+.viewpoint-grid article:nth-child(4) img {
+  object-position: center 72% !important
+}
+
+.viewpoint-grid article:nth-child(5) img {
+  object-position: center 54% !important
+}
+
+.viewpoint-grid article:nth-child(6) img {
+  object-position: center 74% !important
+}
+
+
+
+/* Source: ajustes-finais.css */
+
+/* Ãšltimos ajustes de composiÃ§Ã£o, acessibilidade e versÃ£o multilingue. */
+
+
+.language-quote {
+  max-width: 620px;
+  font-size: 16px !important;
+  line-height: 1.45 !important
+}
+
+.language-quote p {
+  margin: 0;
+  font: 500 15px/1.55 'Playfair Display', serif
+}
+
+.language-quote p b {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 20px
+}
+
+.language-quote cite {
+  display: block;
+  margin-top: 10px;
+  font: 11px/1.4 'DM Mono', monospace;
+  color: #d9d2bf
+}
+
+
+.daytrip-actions p {
+  flex: 0 0 100%;
+  width: 100%;
+  margin-bottom: 0
+}
+
+.daytrip-actions a {
+  flex: 0 0 auto
+}
+
+
+
+.form-submit {
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease !important
+}
+
+.form-submit:hover:not(:disabled) {
+  background: #0a271a !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(10, 39, 26, .25)
+}
+
+.viewpoint-grid article:nth-child(2) img {
+  object-position: center 72% !important
+}
+
+
+
+
+/* Source: ajustes-2.css */
+
+
+
+
+
+
+.language-menu {
+  position: relative;
+  margin-left: 13px;
+  z-index: 40
+}
+
+.language-menu summary {
+  list-style: none;
+  cursor: pointer;
+  color: #f7f2e8;
+  font: 700 11px/1 'DM Mono', monospace;
+  letter-spacing: 1px;
+  padding: 7px 2px
+}
+
+.language-menu summary::-webkit-details-marker {
+  display: none
+}
+
+.language-menu summary::after {
+  content: 'âŒ„';
+  margin-left: 4px;
+  font-size: 11px
+}
+
+.language-menu[open] summary::after {
+  content: 'âŒƒ'
+}
+
+.language-menu>div {
+  position: absolute;
+  right: 0;
+  top: 29px;
+  min-width: 105px;
+  padding: 7px;
+  background: #173d28;
+  box-shadow: 0 7px 18px rgba(0, 0, 0, .25)
+}
+
+.language-menu a {
+  display: block;
+  padding: 8px 10px;
+  color: #f7f2e8;
+  text-decoration: none;
+  font: 11px/1.2 'DM Mono', monospace
+}
+
+.language-menu a:hover,
+.language-menu a[aria-current="page"] {
+  background: #d7dfce;
+  color: #173d28
+}
+
+.language-quote {
+  max-width: none !important;
+  box-sizing: border-box
+}
+
+.language-quote {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 28px;
+  align-items: start
+}
+
+.language-quote p {
+  grid-row: span 2
+}
+
+.language-quote small {
+  margin-top: 0 !important;
+  font: 500 15px/1.55 'Playfair Display', serif !important;
+  color: #f5f0e4 !important
+}
+
+.language-quote cite {
+  grid-column: 2
+}
+
+
+
+.daytrip-actions a {
+  padding: 8px 12px;
+  border: 1px solid #496046;
+  background: #e0e8d8;
+  color: #173d28 !important;
+  text-decoration: none !important;
+}
+
+.daytrip-actions a:hover {
+  background: #173d28;
+  color: #f7f2e8 !important
+}
+
+
+
+
+
+
+
+.booking-request input[type="date"] {
+  color-scheme: light
+}
+
+.booking-request input[type="date"]::-webkit-calendar-picker-indicator {
+  border-radius: 3px;
+  background-color: #cddac4;
+  padding: 4px;
+  cursor: pointer
+}
+
+.back-top-bar {
+  padding: 18px max(20px, calc((100vw - 1180px)/2));
+  text-align: right;
+  background: #244334 !important;
+  margin: 0 !important
+}
+
+
+.back-top-bar .back-top {
+   text-decoration: none;
+  font: 700 11px/1 'DM Mono', monospace;
+  color: #fff;
+}
+
+.footer-top {
+  justify-content: center !important
+}
+
+
+.footer-bottom {
+  justify-content: center !important;
+  text-align: center !important
+}
+
+.footer-bottom span {
+  width: 100%;
+  text-align: center !important
+}
+
+
+
+/* Source: ajustes-3.css */
+
+.booking-request input[type="date"] {
+  border-color: #789073;
+  background: #f7f3e9;
+  color: #173d28
+}
+
+.booking-request input[type="date"]:focus {
+  outline: 2px solid #9caf91;
+  outline-offset: 1px
+}
+
+.booking-request input[type="date"]::-webkit-calendar-picker-indicator {
+  background: #c4d5bd;
+  border: 1px solid #779071;
+  border-radius: 4px;
+  opacity: 1
+}
+
+.language-menu summary {
+  font-size: 12px !important
+}
+
+.language-menu>div {
+  border: 1px solid rgba(247, 242, 232, .25)
+}
+
+
+/* Source: ajustes-4.css */
+
+
+
+
+.daytrip-actions {
+  align-items: stretch !important
+}
+
+.content-highlight {
+  font-weight: 700;
+  font-style: italic;
+  color: inherit;
+}
+
+.daytrip-actions a {
+  display: inline-flex !important;
+  width: 116px;
+  min-height: 38px;
+  padding: 9px 12px !important;
+  border: 0 !important;
+  background: #6d8767 !important;
+  color: #fff !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important
+}
+
+.daytrip-actions a:hover {
+  background: #173d28 !important
+}
+
+.activity-actions a,
+.restaurant-actions a,
+.viewpoint-grid a,
+.form-submit {
+  min-height: 42px;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  white-space: nowrap
+}
+
+.section-heading {
+  display: block !important;
+  margin-bottom: 42px !important
+}
+
+.section-heading .side-copy {
+  max-width: none !important;
+  width: 100% !important;
+  margin: 22px 0 0 !important
+}
+
+.experience-list article {
+  grid-template-columns: 80px minmax(0, 1fr) minmax(0, 1fr) !important
+}
+
+.experience-list article>div {
+  min-width: 0
+}
+
+.experience-list .exp-desc {
+  grid-column: 2/-1 !important;
+  max-width: none !important;
+  margin: 8px 0 0 !important
+}
+
+.experience-list .activity-meta {
+  grid-column: 2/-1 !important;
+  max-width: none !important;
+  margin: 7px 0 0 !important
+}
+
+.experience-list article:has(.historic-list) .historic-list {
+  grid-column: 2/-1 !important;
+  margin-top: 8px !important
+}
+
+.breed-card .number {
+  position: relative !important;
+  display: block !important;
+  margin-bottom: 9px !important;
+  z-index: 2
+}
+
+.breed-card>div {
+  padding-top: 18px !important
+}
+
+
+
+
+/* Source: ajustes-5.css */
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none !important
+}
+
+
+
+.viewpoint-grid a {
+  display: inline-flex !important;
+  width: 116px;
+  min-height: 38px;
+  padding: 9px 12px !important;
+  border: 0 !important;
+  background: #6d8767 !important;
+  color: #fff !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.viewpoint-grid a:hover {
+  background: #173d28 !important
+}
+
+.breed-card>div>span {
+  position: static !important;
+  display: block !important;
+  margin: 0 0 10px !important;
+  line-height: 1 !important;
+  transform: none !important
+}
+
+.breed-card>div>h3 {
+  position: static !important;
+  margin: 0 0 12px !important;
+  transform: none !important
+}
+
+.breed-card>div {
+  display: block !important;
+  padding: 28px !important
+}
+
+
+
+
+/* Source: ajustes-6.css */
+
+
+.round-link {
+  gap: 28px !important
+}
+
+.round-link b {
+  flex: none
+}
+
+.form-submit {
+  justify-self: center !important;
+  font-weight: 700 !important;
+  letter-spacing: .15px
+}
+
+.booking-request .form-submit {
+  margin-left: auto !important;
+  margin-right: auto !important
+}
+
+
+
+
+
+
+
+
+/* EspaÃ§amento explÃ­cito para a seta do convite inicial. */
+.round-link {
+  gap: 0 !important;
+}
+
+.round-link>b {
+  margin-left: 18px !important;
+}
+
+
+
+
+
+
+.round-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 18px !important;
+  text-decoration: none !important;
+}
+
+.round-link>span:first-child {
+  display: block !important;
+}
+
+.round-link>.round-link-icon {
+  display: grid !important;
+  width: 42px !important;
+  height: 42px !important;
+  margin: 0 !important;
+  flex: 0 0 42px !important;
+  place-items: center !important;
+  border: 1px solid currentColor !important;
+  border-radius: 50% !important;
+  font-size: 17px !important;
+  line-height: 1 !important;
+}
+
+
+
+/* Cruise activity: no background image. */
+.experience-list article:first-child {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.legends {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  column-gap: 28px !important;
+}
+
+.legends-heading {
+  grid-column: 1 / -1 !important;
+  grid-row: auto !important;
+  padding: 36px 0 28px !important;
+}
+
+.legends article {
+  grid-column: auto !important;
+}
+
+.language-quote {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 120px !important;
+  gap: 20px !important;
+  align-items: end !important;
+}
+
+.language-quote .poem-copy {
+  min-width: 0;
+}
+
+.language-quote .poem-copy cite {
+  display: block !important;
+  grid-column: auto !important;
+  margin-top: 12px !important;
+}
+
+.language-quote .poem-author {
+  display: block;
+  width: 120px;
+  aspect-ratio: 1 / 1.18;
+  object-fit: cover;
+  object-position: top;
+  filter: sepia(.16) saturate(.82);
+}
+
+
+
+/* MEDIA */
+@media(max-width:900px) {
+  .experience-list article {
+    grid-template-columns: 55px minmax(0, 1fr);
+    align-items: start
+  }
+
+  .experience-list article>div {
+    grid-column: 2 
+  }
+
+  .experience-list .exp-desc,
+  .experience-list .activity-meta,
+  .experience-list article:has(.historic-list) .historic-list {
+    grid-column: 2
+  }
+
+  .breed-card .number {
+    margin-bottom: 12px
+  }
+
+  .breed-card h3 {
+    margin-top: 0;
+     font-size: 30px;
+    line-height: 1.05
+
+  }
+
+  .breed-card>div {
+    padding: 24px
+  }
+
+  .breed-card>div>span {
+    margin-bottom: 11px
+  }
+
+
+}
+
+
+@media(max-width:720px) {
+
+   
+
+  /* General */
+.container {
+    width: calc(100% - 38px)
+  }
+
+  .intro {
+    padding: 80px 0
+  }
+
+  .intro-text {
+    display: block;
+    padding-left: 0;
+    margin-top: 22px
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr
+  }
+
+  .feature {
+    min-height: 370px;
+    padding: 38px
+  }
+
+  .quote-feature {
+    min-height: 280px
+  }
+
+ 
+
+  .section-heading {
+    display: block;
+    margin-bottom: 38px
+  }
+
+  .side-copy {
+    margin: 23px 0 0
+  }
+
+
+  .card-photo {
+    height: 290px
+  }
+
+
+ 
+  .hero {
+    min-height: 680px
+  }
+
+
+  .hero-content {
+    padding-top: 110px
+  }
+
+  .hero h1,
+  h2 {
+    letter-spacing: -2.5px
+  }
+
+  .hero-bottom {
+    font-size: 8px;
+    gap: 10px
+  }
+
+  .hero-bottom span:nth-child(2) {
+    display: none
+  }
+
+   .history-grid,
+  .language-guide,
+  .stay-grid {
+    grid-template-columns: 1fr;
+    gap: 28px
+  }
+
+   .history:before,
+  .culture:before,
+  .breeds:before,
+  .experiences:before,
+  .viewpoints:before {
+    left: calc((100vw - 100%)/-2);
+    right: calc((100vw - 100%)/-2)
+  }
+
+  .section-heading .side-copy {
+    margin-top: 16px 
+  }
+
+    .round-link {
+    gap: 16px;
+  }
+
+  .hero-content .round-link {
+    margin-top: 34px;
+  }
+
+  /* Navigation */
+  .nav {
+    height: 82px
+  }
+
+  .nav-links,
+  .nav-cta {
+    display: none
+  }
+
+ .nav-links.open {
+    display: flex;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    right: 0;
+    background: #1d2924;
+    padding: 22px;
+    flex-direction: column;
+    z-index: 2
+  }
+
+   .menu-toggle {
+    display: block;
+    background: none;
+    border: 0;
+    color: #fff;
+    font-size: 24px;
+    order: 3
+  }
+
+  
+   .back-top-bar {
+    padding: 18px 20px
+  }
+
+
+
+
+  /* Brand */
+
+
+  .brand .brand-title {
+    font-size: 18px !important
+  }
+
+  .brand .brand-kicker
+   {
+    font-size: 9px !important
+  }
+
+
+  /* History */
+
+   .history {
+    padding: 80px 0
+  }
+  
+  .historic-list {
+    grid-column: auto
+  }
+
+ 
+
+  /* Legends */
+
+  .legends {
+    margin-top: 65px;
+    display: block
+  }
+
+  .legends-heading {
+    padding: 26px 0
+  }
+
+   .legends article img {
+    width: 80px;
+    height: 80px
+  }
+
+   .legends article {
+    grid-template-columns: 28px 80px minmax(0, 1fr) 18px;
+     gap: 9px
+  }
+
+
+  .legends article+article {
+    margin-top: 0;
+  }
+
+
+/* Culture */
+
+ .culture {
+    padding: 80px 0
+  }
+
+  .culture-cards {
+    grid-template-columns: 1fr;
+    gap: 35px
+  }
+
+
+
+/* Gastronomia */
+.flavour {
+    grid-template-columns: 1fr
+  }
+
+  .flavour-image {
+    min-height: 360px
+  }
+
+  .flavour-content {
+    padding: 60px 20px
+  }
+
+  .flavour-list {
+    grid-template-columns: 1fr
+  }
+
+  .flavour-list article:nth-child(odd) {
+    padding-right: 0
+  }
+
+  .flavour-list article {
+    grid-template-columns: 58px 1fr
+  }
+
+  .flavour-list .dish-photo {
+    height: 58px;
+    width: 58px
+  }
+
+  /* Breeds */
+
+  .breed-grid {
+    grid-template-columns: 1fr
+  }
+ 
+
+  .breed-card {
+    height: 330px
+  }
+
+
+  /* Experiences */
+
+   .exp-no {
+    padding-left: 6px;
+   }
+
+  .experience-list article {
+    align-items: start;
+    grid-template-columns: 35px minmax(0, 1fr) !important
+  }
+
+  .experience-list h3 {
+    font-size: 25px
+  }
+
+  .experience-list article:first-child {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+
+  .experience-list .exp-desc {
+    display: block;
+    grid-row: auto;
+    max-width: none;
+    margin: 4px 0 0;
+    padding-right:15px;
+
+  }
+
+  .experience-list .activity-meta {
+    display: block;
+    grid-column: 2/-1;
+    grid-row: auto;
+    max-width: none;
+    margin: 0 0 7px !important
+  }
+
+
+
+  .experience-list article>div {
+    grid-column: 2;
+    min-width: 0
+  }
+
+  .experience-list article>.arrow {
+    grid-column: 3;
+    grid-row: 1
+  }
+
+  .experience-list article>div .activity-actions {
+    margin-top: 12px
+  }
+
+
+  .experience-list .exp-desc,
+  .experience-list .activity-meta,
+  .experience-list article:has(.historic-list) .historic-list {
+    grid-column: 2 !important
+  }
+
+/************ Restaurants ****************/
+
+  .restaurants {
+    padding: 80px 0
+  }
+
+  .restaurant-grid,
+  .restaurant-list {
+    grid-template-columns: 1fr
+  }
+
+  .restaurant-card {
+    height: 280px
+  }
+
+  .restaurant-list {
+    gap: 0;
+    margin-bottom: 55px
+  }
+
+  /* Stays */
+
+
+
+  .stays-inner {
+    grid-template-columns: 1fr
+  }
+
+  
+  .stays-image {
+    min-height: 330px
+  }
+
+
+ .stay-card-copy>p:not(.eyebrow) {
+    min-height: 0
+  }
+  
+  .stay-photo {
+    height: 230px
+  }
+
+
+ .stay-grid .stay-actions {
+      grid-template-columns: 1fr 1fr;
+    width: 100%;
+      gap: 8px
+  }
+
+  .stay-grid .stay-actions .button {
+    padding: 11px 7px;
+    font-size: 11px 
+  }
+
+  .stay-contact a {
+font-size: 11px;
+  }
+    
+  .stay-grid {
+    grid-template-columns: 1fr!important;
+  }
+
+
+
+
+  /* Language */
+
+  .language-guide {
+    margin-top: 60px;
+    padding: 26px
+  }
+
+  
+  .language-quote {
+    margin: 24px 0;
+    font-size: 18px;
+    grid-template-columns: minmax(0, 1fr) 86px;
+  }
+
+  
+  .language-quote p {
+    font-size: 14px;
+    grid-row: auto;
+  }
+
+  .language-quote p b {
+    font-size: 18px
+  }
+  
+
+  .language-quote cite {
+    grid-column: auto
+  }
+
+    
+  .language-quote .poem-author {
+    width: 86px;
+  }
+
+  .alphabet {
+    grid-column: auto
+  }
+
+   .alphabet-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+  }
+
+
+  /* Map */
+
+  .map-section {
+    padding: 75px 0
+  }
+
+  .map-section iframe {
+    height: 320px
+  }
+
+
+  /* Viewpoints */
+ 
+
+  .viewpoints {
+    padding: 75px 0
+  }
+
+  .viewpoint-grid {
+    grid-template-columns: 1fr
+  }
+
+  .viewpoint-grid img {
+    height: 250px
+  }
+
+ 
+ 
+/* Day Trips */
+
+ 
+
+  .daytrips {
+    padding: 75px 0
+  }
+
+  .daytrip-grid {
+    grid-template-columns: 1fr
+  }
+
+.daytrip-actions a {
+    width: 116px
+  }
+
+
+
+  /* Events */
+ 
+  .annual-events {
+    padding: 75px 0;
+    box-shadow: 0 0 0 100vmax #d6ddce
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr
+  }
+
+   .events-grid>.village-festivals {
+    grid-column: auto;
+  }
+  
+  .events-grid .event-feature {
+    grid-column: auto;
+    grid-template-columns: 1fr
+  }
+
+  .event-feature img {
+    height: 220px;
+    min-height: 0
+  }
+
+
+/* Booking Request */
+
+  .booking-request {
+    grid-template-columns: 1fr;
+    padding: 28px 22px;
+    gap: 28px
+  }
+
+  .booking-request h3 {
+    font-size: 33px
+  }
+
+  .booking-request form {
+    grid-template-columns: 1fr
+  }
+
+  .guest-counts {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px
+  }
+
+  .guest-counts .form-field input {
+    padding: 11px 7px
+  }
+
+
+  /* Footer */
+    .footer-top,
+  .footer-bottom {
+    gap: 25px;
+    align-items: flex-start;
+    flex-direction: column
+  }
+
+  .footer-top>p {
+    font-size: 21px
+  }
+
+}
+
+
+
+
